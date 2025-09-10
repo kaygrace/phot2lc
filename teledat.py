@@ -235,6 +235,7 @@ def get_telinfo():
              "instname":"E-4240bi",
              "code"    :"amag",
              "objname" :"OBJECT",
+             "filter"  :"FILTER",
              "observer":"OBSERVER",
              "date"    :"DATE-OBS",
              "time"    :None,
@@ -244,7 +245,7 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :1.00
-         },
+         }             
     ]
 
     return tele_info
