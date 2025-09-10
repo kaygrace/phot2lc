@@ -245,7 +245,23 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :1.00
-         }             
+         },
+         {
+             "telename":"Mt. Suhora Obs. Small Dome",
+             "instname":"SBIG ST-10 Dual CCD Camera",
+             "code"    :"suho",
+             "objname" :"OBJECT",
+             "filter"  :"FILTER",
+             "observer":"OBSERVER",
+             "date"    :"DATE-OBS",
+             "time"    :None,
+             "texp"    :"EXPTIME",
+             "dformat" :1,
+             "tformat" :1,
+             "dark"    :np.nan,
+             "read"    :np.nan,
+             "gain"    :1.00
+         },
     ]
 
     return tele_info
