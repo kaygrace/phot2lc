@@ -164,9 +164,7 @@ def get_loc(hdr,telcode):
         )
     elif telcode == 'sarm':
         loc = EarthLocation.of_site('Roque de los Muchachos')
-    elif telcode == 'sakt':
-        loc = EarthLocation.of_site('Kitt Peak')
-    elif telcode == 'sakp':
+    elif telcode == 'sakp' or telcode == 'sakt':
         loc = EarthLocation.of_site('Kitt Peak')
     elif telcode == 'sact':
         loc = EarthLocation.of_site('ctio')
