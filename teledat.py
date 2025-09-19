@@ -262,6 +262,22 @@ def get_telinfo():
              "read"    :np.nan,
              "gain"    :1.00
          },
+         {
+             "telename":"61" Mt. Bigelow",
+             "instname":"mont4k",
+             "code"    :"stew",
+             "objname" :"OBJECT",
+             "filter"  :"",
+             "observer":"OBSERVER",
+             "date"    :"DATE-OBS",
+             "time"    :None,
+             "texp"    :"EXPTIME",
+             "dformat" :1,
+             "tformat" :1,
+             "dark"    :np.nan,
+             "read"    :6.58,
+             "gain"    :3.16
+          },
     ]
 
     return tele_info
