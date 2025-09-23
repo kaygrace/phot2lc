@@ -225,6 +225,20 @@ def get_loc(hdr,telcode):
                 lat=23.4691667*u.deg,
                 height=2862*u.m
             )
+
+    elif telcode == 'opd06':
+        loc = EarthLocation.from_geodetic(
+                lon=-45.5825000*u.deg,
+                lat=-22.5344444*u.deg,
+                height=1980*u.m
+            )
+
+    elif telcode == 'mcao':
+        loc = EarthLocation.from_geodetic(
+                lon=-75.6333278*u.deg,
+                lat=39.7850000*u.deg,
+                height=200*u.m #guess
+            )
     return loc
 
 ###################################################
