@@ -394,7 +394,7 @@ instrument = teldict['instname']
 if psource in ['hsp','mae','hcm']:
     hdr = fits.getheader(fits_list[0])
     observer = hdr[teldict['observer']]
-	if hdr[teldict['filter']]:
+	if 'filter' in hdr:
     	filter_name = hdr[teldict['filter']]
     if args.object is None:
         obj_name = hdr[teldict['objname']].replace(" ","")
@@ -2107,7 +2107,8 @@ else:
     bjed_entry = '\nBJED       = {:30s}# Mid Exposure BJD-TDB at T0'.format('None')
 
 # Header for the raw photometry file
-rawphot_header = 'Object     = {:30s}# Name of Object'.format(obj_name) + \
+if 'filter' in hdr:
+	rawphot_header = 'Object     = {:30s}# Name of Object'.format(obj_name) + \
     '\nRA         = {:30s}# Object Right Ascension'.format(ra_string) + \
     '\nDec        = {:30s}# Object Declination'.format(de_string) + \
     '\nTelescope  = {:30s}# Name of Telescope'.format(telescope) + \
@@ -2126,10 +2127,31 @@ rawphot_header = 'Object     = {:30s}# Name of Object'.format(obj_name) + \
     '\nApRadius   = {:<30.2f}# Aperture Radius (pixels)'.format(opt_ap) + \
     '\nNkeep      = {:<30d}# Number of points in light curve '.format(len(keep_ind)) + \
     '\nNdelete    = {:<30d}# Number of points removed'.format(len(dele_ind)) + \
-    '\nColumns: Time since T0 (s), Target, Comparisons, Sky' 
+    '\nColumns: Time since T0 (s), Target, Comparisons, Sky'
+else:
+	rawphot_header = 'Object     = {:30s}# Name of Object'.format(obj_name) + \
+    '\nRA         = {:30s}# Object Right Ascension'.format(ra_string) + \
+    '\nDec        = {:30s}# Object Declination'.format(de_string) + \
+    '\nTelescope  = {:30s}# Name of Telescope'.format(telescope) + \
+    '\nInstrument = {:30s}# Name of Instrument'.format(instrument) + \
+    '\nTeleCode   = {:30s}# Teledat Code Name'.format(telcode) + \
+    '\nObserver   = {:30s}# Name of Observer'.format(observer) + \
+    '\nDate       = {:30s}# Mid-Exposure UTC Date at T0'.format(st.split("T")[0]) + \
+    '\nTime       = {:30s}# Mid-Exposure UTC Time at T0'.format(st.split("T")[1]) + \
+    '\nMJD        = {:<30.9f}# Mid-Exposure UTC MJD at T0'.format(st_mjd) + \
+    '\nExptime    = {:<30.6f}# Exposure Time (s)'.format(texp) + \
+    '{}'.format(bjed_entry) + \
+    '\nBarycorr   = {:30s}# Barycentric Corrections Applied?'.format(str(barycorr)) + \
+    '\nApPhot     = {:30s}# Photometry Program'.format(source_dict[psource]) + \
+    '\nOrigFile   = {:30s}# Source Photometry Filename'.format(phot_names[opt_ind]) + \
+    '\nApRadius   = {:<30.2f}# Aperture Radius (pixels)'.format(opt_ap) + \
+    '\nNkeep      = {:<30d}# Number of points in light curve '.format(len(keep_ind)) + \
+    '\nNdelete    = {:<30d}# Number of points removed'.format(len(dele_ind)) + \
+    '\nColumns: Time since T0 (s), Target, Comparisons, Sky'
 
 # Header for the final lightcurve
-lcfin_header = 'Object     = {:30s}# Name of Object'.format(obj_name) + \
+if 'filter' in hdu:
+	lcfin_header = 'Object     = {:30s}# Name of Object'.format(obj_name) + \
     '\nRA         = {:30s}# Object Right Ascension'.format(ra_string) + \
     '\nDec        = {:30s}# Object Declination'.format(de_string) + \
     '\nTelescope  = {:30s}# Name of Telescope'.format(telescope) + \
@@ -2154,7 +2176,33 @@ lcfin_header = 'Object     = {:30s}# Name of Object'.format(obj_name) + \
     '\nNdelete    = {:<30d}# Number of points removed'.format(len(dele_ind)) + \
     '\nAuthor     = {:30s}# Author of this light curve'.format(author) + \
     '\nCreatedOn  = {:30s}# Date created'.format(Time.now().to_value("iso")) + \
-    '\nColumns: Time since T0 (s), Relative Flux, Relative Flux Error' 
+    '\nColumns: Time since T0 (s), Relative Flux, Relative Flux Error'
+else:
+	lcfin_header = 'Object     = {:30s}# Name of Object'.format(obj_name) + \
+    '\nRA         = {:30s}# Object Right Ascension'.format(ra_string) + \
+    '\nDec        = {:30s}# Object Declination'.format(de_string) + \
+    '\nTelescope  = {:30s}# Name of Telescope'.format(telescope) + \
+    '\nInstrument = {:30s}# Name of Instrument'.format(instrument) + \
+    '\nTeleCode   = {:30s}# Teledat Code Name'.format(telcode) + \
+    '\nObserver   = {:30s}# Name of Observer'.format(observer) + \
+    '\nDate       = {:30s}# Mid-Exposure UTC Date at T0'.format(st.split("T")[0]) + \
+    '\nTime       = {:30s}# Mid-Exposure UTC Time at T0'.format(st.split("T")[1]) + \
+    '\nMJD        = {:<30.9f}# Mid-Exposure UTC MJD at T0'.format(st_mjd) + \
+    '\nExptime    = {:<30.6f}# Exposure Time (s)'.format(texp) + \
+    '{}'.format(bjed_entry) + \
+    '\nBarycorr   = {:30s}# Barycentric Corrections Applied?'.format(str(barycorr)) + \
+    '\nApPhot     = {:30s}# Photometry Program'.format(source_dict[psource]) + \
+    '\nOrigFile   = {:30s}# Source Photometry Filename'.format(phot_names[opt_ind]) + \
+    '\nApRadius   = {:<30.2f}# Aperture Radius (pixels)'.format(opt_ap) + \
+    '\nAvgScatter = {:<30.2f}# Avg. Point-to-Point Scatter (%)'.format(opt_pp) + \
+    '\nNComps     = {:<30d}# Number of Comparison stars used'.format(comp_number) + \
+    '\nCompIDs    = {:30s}# IDs of Comparison stars used'.format(comp_ids.replace("+",",")) + \
+    '\nPolyOrder  = {:<30d}# Degree of Polynomial Division'.format(polypack[0]) + \
+    '\nNkeep      = {:<30d}# Number of points in light curve '.format(len(keep_ind)) + \
+    '\nNdelete    = {:<30d}# Number of points removed'.format(len(dele_ind)) + \
+    '\nAuthor     = {:30s}# Author of this light curve'.format(author) + \
+    '\nCreatedOn  = {:30s}# Date created'.format(Time.now().to_value("iso")) + \
+    '\nColumns: Time since T0 (s), Relative Flux, Relative Flux Error'
 
 # Header for the raw photometry file
 log_header = '    OBJECT = {}'.format(obj_name) + \
