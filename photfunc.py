@@ -260,6 +260,56 @@ def get_loc(hdr,telcode):
                 lat=37.3988889*u.deg,
                 height=455*u.m #from nearest town wiki
             )
+
+    elif telcode == 'tueb':
+        loc = EarthLocation.from_geodetic(
+                lon=9.0700000*u.deg,
+                lat=48.5341667*u.deg,
+                height=400*u.m #from nearest town wiki
+            )
+
+    elif telcode == 'hao':
+        loc = EarthLocation.from_geodetic(
+                lon=10.3833333*u.deg,
+                lat=59.4333333*u.deg,
+                height=0*u.m #can't find
+            )
+
+    elif telcode == 'pisz':
+        loc = EarthLocation.from_geodetic(
+                lon=19.8941667*u.deg,
+                lat=47.9180556*u.deg,
+                height=944*u.m
+            )
+
+    elif telcode == 'krak':
+        loc = EarthLocation.from_geodetic(
+                lon=20.0675000*u.deg,
+                lat=49.5691667*u.deg,
+                height=383*u.m #used the highest elevation from Krakow wiki
+            )
+
+    elif telcode == 'suho':
+        loc = EarthLocation.from_geodetic(
+                lon=20.0675000*u.deg,
+                lat=49.5691667*u.deg,
+                height=1009*u.m 
+            )
+
+    elif telcode == 'mole':
+        loc = EarthLocation.from_geodetic(
+                lon=25.5633333*u.deg,
+                lat=55.3159722*u.deg,
+                height=200*u.m 
+            )
+    
+    elif telcode == 'last':
+        loc = EarthLocation.from_geodetic(
+                lon=35.0252778*u.deg,
+                lat=30.0483333*u.deg,
+                height=400*u.m 
+            )
+    
     return loc
 
 ###################################################
