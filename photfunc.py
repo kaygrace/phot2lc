@@ -200,6 +200,9 @@ def get_loc(hdr,telcode):
 
     elif telcode == 'ap05':
         loc = EarthLocation.of_site('Apache Point Observatory')
+
+    elif telcode == 'oanspm':
+        loc = EarthLocation.of_site('Observatorio Astronomico Nacional, San Pedro Metir')
     return loc
 
 ###################################################
