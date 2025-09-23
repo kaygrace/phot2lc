@@ -330,6 +330,20 @@ def get_loc(hdr,telcode):
                 lat=43.2252778*u.deg,
                 height=2750*u.m 
             )
+
+    elif telcode == 'dfot':
+        loc = EarthLocation.from_geodetic(
+                lon=79.6850000*u.deg,
+                lat=29.3616667*u.deg,
+                height=2450*u.m 
+            )
+
+    elif telcode == 'pat':
+        loc = EarthLocation.from_geodetic(
+                lon=87.1833333*u.deg,
+                lat=43.4666667*u.deg,
+                height=2080*u.m 
+            )
     return loc
 
 ###################################################
