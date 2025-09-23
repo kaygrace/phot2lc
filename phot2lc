@@ -394,7 +394,8 @@ instrument = teldict['instname']
 if psource in ['hsp','mae','hcm']:
     hdr = fits.getheader(fits_list[0])
     observer = hdr[teldict['observer']]
-    filter_name = hdr[teldict['filter']]
+	if hdr[teldict['filter']]:
+    	filter_name = hdr[teldict['filter']]
     if args.object is None:
         obj_name = hdr[teldict['objname']].replace(" ","")
         if obj_name is None:
