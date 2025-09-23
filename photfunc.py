@@ -237,7 +237,28 @@ def get_loc(hdr,telcode):
         loc = EarthLocation.from_geodetic(
                 lon=-75.6333278*u.deg,
                 lat=39.7850000*u.deg,
-                height=200*u.m #guess
+                height=100*u.m #guess
+            )
+
+    elif telcode == 'erau':
+        loc = EarthLocation.from_geodetic(
+                lon=-81.0483139*u.deg,
+                lat=29.1881833*u.deg,
+                height=15*u.m #guess
+            )
+
+    elif telcode == 'unca':
+        loc = EarthLocation.from_geodetic(
+                lon=-82.5519444*u.deg,
+                lat=35.5955556*u.deg,
+                height=1000*u.m #guess
+            )
+
+    elif telcode == 'bake':
+        loc = EarthLocation.from_geodetic(
+                lon=-93.0416667*u.deg,
+                lat=37.3988889*u.deg,
+                height=455*u.m #from nearest town wiki
             )
     return loc
 
