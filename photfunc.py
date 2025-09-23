@@ -206,6 +206,15 @@ def get_loc(hdr,telcode):
 
     elif telcode == 'gems':
         loc = EarthLocation.of_site('Gemini South')
+
+    elif telcode == 'xing60':
+        loc = EarthLocation.of_site('Beijing XingLong Observatory')
+
+    elif telcode == 'tnt':
+        loc = EarthLocation.of_site('Beijing XingLong Observatory')
+
+    elif telcode == 'bnt':
+        loc = EarthLocation.of_site('Beijing XingLong Observatory')
     return loc
 
 ###################################################
