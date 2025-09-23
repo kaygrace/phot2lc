@@ -262,6 +262,22 @@ def get_telinfo():
              "read"    :np.nan,
              "gain"    :1.00
          },
+        {
+             "telename":"Lulin 1m, LOT",
+             "instname":"Andor CCD/EMCCD (SDK2)",
+             "code"    :"luli",
+             "objname" :"OBJECT",
+             "filter"  :"FILTER",
+             "observer":"OBSERVER",
+             "date"    :"DATE-OBS",
+             "time"    :"TIME-OBS",
+             "texp"    :"EXPTIME",
+             "dformat" :1,
+             "tformat" :0,
+             "dark"    :np.nan,
+             "read"    :8.5,
+             "gain"    :2.00
+         }
     ]
 
     return tele_info
