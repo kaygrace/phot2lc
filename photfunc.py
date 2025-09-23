@@ -194,6 +194,12 @@ def get_loc(hdr,telcode):
             )
     elif telcode == 'caha':
         loc = EarthLocation.of_site('CAHA')
+
+    elif telcode == 'ap35':
+        loc = EarthLocation.of_site('Apache Point Observatory')
+
+    elif telcode == 'ap05':
+        loc = EarthLocation.of_site('Apache Point Observatory')
     return loc
 
 ###################################################
