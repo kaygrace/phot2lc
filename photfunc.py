@@ -215,6 +215,13 @@ def get_loc(hdr,telcode):
 
     elif telcode == 'bnt':
         loc = EarthLocation.of_site('Beijing XingLong Observatory')
+
+    elif telcode == 'luli':
+        loc = EarthLocation.from_geodetic(
+                lon=120.8727778*u.deg,
+                lat=23.4691667*u.deg,
+                height=2862*u.m
+            )
     return loc
 
 ###################################################
