@@ -263,7 +263,7 @@ def get_telinfo():
              "gain"    :1.00
          },
          {
-             "telename":"61" Mt. Bigelow",
+             "telename":"61 inch Mt. Bigelow",
              "instname":"mont4k",
              "code"    :"stew",
              "objname" :"OBJECT",
@@ -278,6 +278,22 @@ def get_telinfo():
              "read"    :6.58,
              "gain"    :3.16
           },
+        {
+             "telename":"Lulin 1m, LOT",
+             "instname":"Andor CCD/EMCCD (SDK2)",
+             "code"    :"luli",
+             "objname" :"OBJECT",
+             "filter"  :"FILTER",
+             "observer":"OBSERVER",
+             "date"    :"DATE-OBS",
+             "time"    :"TIME-OBS",
+             "texp"    :"EXPTIME",
+             "dformat" :1,
+             "tformat" :0,
+             "dark"    :np.nan,
+             "read"    :8.5,
+             "gain"    :2.00
+         }
     ]
 
     return tele_info
