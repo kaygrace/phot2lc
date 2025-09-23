@@ -216,6 +216,9 @@ def get_loc(hdr,telcode):
     elif telcode == 'bnt':
         loc = EarthLocation.of_site('Beijing XingLong Observatory')
 
+    elif telcode == 'warw':
+        loc = EarthLocation.of_site('Roque de los Muchachos')
+
     elif telcode == 'luli':
         loc = EarthLocation.from_geodetic(
                 lon=120.8727778*u.deg,
