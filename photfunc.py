@@ -203,6 +203,9 @@ def get_loc(hdr,telcode):
 
     elif telcode == 'oanspm':
         loc = EarthLocation.of_site('Observatorio Astronomico Nacional, San Pedro Metir')
+
+    elif telcode == 'gems':
+        loc = EarthLocation.of_site('Gemini South')
     return loc
 
 ###################################################
