@@ -194,6 +194,156 @@ def get_loc(hdr,telcode):
             )
     elif telcode == 'caha':
         loc = EarthLocation.of_site('CAHA')
+
+    elif telcode == 'ap35':
+        loc = EarthLocation.of_site('Apache Point Observatory')
+
+    elif telcode == 'ap05':
+        loc = EarthLocation.of_site('Apache Point Observatory')
+
+    elif telcode == 'oanspm':
+        loc = EarthLocation.of_site('Observatorio Astronomico Nacional, San Pedro Metir')
+
+    elif telcode == 'gems':
+        loc = EarthLocation.of_site('Gemini South')
+
+    elif telcode == 'xing60':
+        loc = EarthLocation.of_site('Beijing XingLong Observatory')
+
+    elif telcode == 'tnt':
+        loc = EarthLocation.of_site('Beijing XingLong Observatory')
+
+    elif telcode == 'bnt':
+        loc = EarthLocation.of_site('Beijing XingLong Observatory')
+
+    elif telcode == 'warw':
+        loc = EarthLocation.of_site('Roque de los Muchachos')
+
+    elif telcode == 'luli':
+        loc = EarthLocation.from_geodetic(
+                lon=120.8727778*u.deg,
+                lat=23.4691667*u.deg,
+                height=2862*u.m
+            )
+
+    elif telcode == 'opd06':
+        loc = EarthLocation.from_geodetic(
+                lon=-45.5825000*u.deg,
+                lat=-22.5344444*u.deg,
+                height=1980*u.m
+            )
+
+    elif telcode == 'mcao':
+        loc = EarthLocation.from_geodetic(
+                lon=-75.6333278*u.deg,
+                lat=39.7850000*u.deg,
+                height=100*u.m #guess
+            )
+
+    elif telcode == 'erau':
+        loc = EarthLocation.from_geodetic(
+                lon=-81.0483139*u.deg,
+                lat=29.1881833*u.deg,
+                height=15*u.m #guess
+            )
+
+    elif telcode == 'unca':
+        loc = EarthLocation.from_geodetic(
+                lon=-82.5519444*u.deg,
+                lat=35.5955556*u.deg,
+                height=1000*u.m #guess
+            )
+
+    elif telcode == 'bake':
+        loc = EarthLocation.from_geodetic(
+                lon=-93.0416667*u.deg,
+                lat=37.3988889*u.deg,
+                height=455*u.m #from nearest town wiki
+            )
+
+    elif telcode == 'tueb':
+        loc = EarthLocation.from_geodetic(
+                lon=9.0700000*u.deg,
+                lat=48.5341667*u.deg,
+                height=400*u.m #from nearest town wiki
+            )
+
+    elif telcode == 'hao':
+        loc = EarthLocation.from_geodetic(
+                lon=10.3833333*u.deg,
+                lat=59.4333333*u.deg,
+                height=0*u.m #can't find
+            )
+
+    elif telcode == 'pisz':
+        loc = EarthLocation.from_geodetic(
+                lon=19.8941667*u.deg,
+                lat=47.9180556*u.deg,
+                height=944*u.m
+            )
+
+    elif telcode == 'krak':
+        loc = EarthLocation.from_geodetic(
+                lon=20.0675000*u.deg,
+                lat=49.5691667*u.deg,
+                height=383*u.m #used the highest elevation from Krakow wiki
+            )
+
+    elif telcode == 'suho':
+        loc = EarthLocation.from_geodetic(
+                lon=20.0675000*u.deg,
+                lat=49.5691667*u.deg,
+                height=1009*u.m 
+            )
+
+    elif telcode == 'mole':
+        loc = EarthLocation.from_geodetic(
+                lon=25.5633333*u.deg,
+                lat=55.3159722*u.deg,
+                height=200*u.m 
+            )
+    
+    elif telcode == 'last':
+        loc = EarthLocation.from_geodetic(
+                lon=35.0252778*u.deg,
+                lat=30.0483333*u.deg,
+                height=400*u.m 
+            )
+
+    elif telcode == 'adu60':
+        loc = EarthLocation.from_geodetic(
+                lon=38.231667*u.deg,
+                lat=37.743889*u.deg,
+                height=675*u.m 
+            )
+
+    elif telcode == 'atoz':
+        loc = EarthLocation.from_geodetic(
+                lon=77.8716667*u.deg,
+                lat=43.2252778*u.deg,
+                height=2750*u.m 
+            )
+
+    elif telcode == 'atoa':
+        loc = EarthLocation.from_geodetic(
+                lon=77.8716667*u.deg,
+                lat=43.2252778*u.deg,
+                height=2750*u.m 
+            )
+
+    elif telcode == 'dfot':
+        loc = EarthLocation.from_geodetic(
+                lon=79.6850000*u.deg,
+                lat=29.3616667*u.deg,
+                height=2450*u.m 
+            )
+
+    elif telcode == 'pat':
+        loc = EarthLocation.from_geodetic(
+                lon=87.1833333*u.deg,
+                lat=43.4666667*u.deg,
+                height=2080*u.m 
+            )
     return loc
 
 ###################################################
