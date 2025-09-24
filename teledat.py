@@ -267,7 +267,7 @@ def get_telinfo():
              "instname":"mont4k",
              "code"    :"stew",
              "objname" :"OBJECT",
-             "filter"  :"",
+             "filter"  :"FILTER",
              "observer":"OBSERVER",
              "date"    :"DATE-OBS",
              "time"    :None,
