@@ -293,6 +293,22 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :8.5,
              "gain"    :2.00
+         },
+        {
+             "telename":"Piszkéstető Observatory",
+             "instname":"sicamera",
+             "code"    :"pisz",
+             "objname" :"OBJECT",
+             "filter"  :"FILTER",
+             "observer":"UNIXUSER",
+             "date"    :"DATE-OBS",
+             "time"    :None,
+             "texp"    :"EXPTIME",
+             "dformat" :1,
+             "tformat" :1,
+             "dark"    :np.nan,
+             "read"    :np.nan,
+             "gain"    :1.00
          }
     ]
 
