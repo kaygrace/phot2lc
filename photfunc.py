@@ -264,6 +264,13 @@ def get_loc(hdr,telcode):
                 height=305*u.m #from 50cm fits file
             )
 
+    elif telcode == 'krak14':
+        loc = EarthLocation.from_geodetic(
+                lon=23.20722*u.deg,
+                lat=50.19306*u.deg,
+                height=221*u.m #from fits file
+            )
+
     elif telcode == 'suho':
         loc = EarthLocation.from_geodetic(
                 lon=20.0675000*u.deg,
