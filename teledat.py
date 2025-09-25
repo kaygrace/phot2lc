@@ -325,6 +325,22 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :1.00
+         },
+        {
+             "telename":"Krakow 50 cm",
+             "instname":"QHY-600M",
+             "code"    :"krak",
+             "objname" :"OBJECT",
+             "filter"  :"FILTER",
+             "observer":"OBSERVER",
+             "date"    :"DATE-OBS",
+             "time"    :"TIME-OBS",
+             "texp"    :"EXPTIME",
+             "dformat" :0,
+             "tformat" :0,
+             "dark"    :np.nan,
+             "read"    :12.9,
+             "gain"    :16.00
          }
     ]
 
