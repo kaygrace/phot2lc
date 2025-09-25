@@ -341,6 +341,22 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :12.9,
              "gain"    :16.00
+         },
+        
+             "telename":"Remote 14inch run by Krakow Observatory, by Ukraine border",
+             "instname":"ASI Camera",
+             "code"    :"krak14",
+             "objname" :"OBJECT",
+             "filter"  :"FILTER",
+             "observer":"OBSERVER",
+             "date"    :"DATE-OBS",
+             "time"    :None,
+             "texp"    :"EXPTIME",
+             "dformat" :1,
+             "tformat" :1,
+             "dark"    :np.nan,
+             "read"    :np.nan,
+             "gain"    :0.4386
          }
     ]
 
