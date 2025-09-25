@@ -261,7 +261,7 @@ def get_loc(hdr,telcode):
         loc = EarthLocation.from_geodetic(
                 lon=20.0675000*u.deg,
                 lat=49.5691667*u.deg,
-                height=383*u.m #used the highest elevation from Krakow wiki
+                height=305*u.m #from 50cm fits file
             )
 
     elif telcode == 'suho':
