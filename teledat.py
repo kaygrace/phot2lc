@@ -342,7 +342,7 @@ def get_telinfo():
              "read"    :12.9,
              "gain"    :16.00
          },
-        
+        {
              "telename":"Remote 14inch run by Krakow Observatory, by Ukraine border",
              "instname":"ASI Camera",
              "code"    :"krak14",
@@ -357,6 +357,22 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :0.4386
+         },
+        {
+             "telename":"HAO68 at Horten Observatory, Norway",
+             "instname":"Moravian Instruments, G2-1600 MkII",
+             "code"    :"hao",
+             "objname" :"OBJECT",
+             "filter"  :"FILTER",
+             "observer":"OBSERVER",
+             "date"    :"DATE-OBS",
+             "time"    :None,
+             "texp"    :"EXPTIME",
+             "dformat" :1,
+             "tformat" :1,
+             "dark"    :np.nan,
+             "read"    :np.nan,
+             "gain"    :1.5
          }
     ]
 
