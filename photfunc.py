@@ -196,8 +196,6 @@ def get_loc(hdr,telcode):
         loc = EarthLocation.of_site('CAHA')
     elif telcode == 'ap35' or telcode == 'ap05':
         loc = EarthLocation.of_site('Apache Point Observatory')
-    elif telcode == 'oanspm':
-        loc = EarthLocation.of_site('Observatorio Astronomico Nacional, San Pedro Metir')
     elif telcode == 'gems':
         loc = EarthLocation.of_site('Gemini South')
 
@@ -295,19 +293,14 @@ def get_loc(hdr,telcode):
                 lat=37.743889*u.deg,
                 height=675*u.m 
             )
-    elif telcode == 'atoz':
+    elif telcode == 'atoz' or telcode == 'atoa':
         loc = EarthLocation.from_geodetic(
                 lon=77.8716667*u.deg,
                 lat=43.2252778*u.deg,
                 height=2750*u.m 
             )
-    elif telcode == 'atoa':
-        loc = EarthLocation.from_geodetic(
-                lon=77.8716667*u.deg,
-                lat=43.2252778*u.deg,
-                height=2750*u.m 
-            )
-    elif telcode == 'dfot':
+    
+    elif telcode == 'dfot' or telcode == 'dot':
         loc = EarthLocation.from_geodetic(
                 lon=79.6850000*u.deg,
                 lat=29.3616667*u.deg,
