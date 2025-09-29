@@ -329,7 +329,7 @@ def get_telinfo():
         {
              "telename":"Krakow 50 cm",
              "instname":"QHY-600M",
-             "code"    :"krak",
+             "code"    :"krak50",
              "objname" :"OBJECT",
              "filter"  :"FILTER",
              "observer":"OBSERVER",
@@ -345,7 +345,7 @@ def get_telinfo():
         {
              "telename":"Remote 14inch run by Krakow Observatory, by Ukraine border",
              "instname":"ASI Camera",
-             "code"    :"krak14",
+             "code"    :"tymce",
              "objname" :"OBJECT",
              "filter"  :"FILTER",
              "observer":"OBSERVER",
