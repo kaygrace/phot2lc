@@ -407,7 +407,7 @@ def get_telinfo():
              "gain"    :1.30117
          },
         {
-             "telename":"3.5m DFOT at ARIES",
+             "telename":"3.5m DOT at ARIES",
              "instname":"TIRCAM2",
              "code"    :"dot",
              "objname" :"OBJECT",
