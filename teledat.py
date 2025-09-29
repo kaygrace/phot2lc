@@ -389,6 +389,22 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :1.0
+         },
+        {
+             "telename":"CDK500 at Krakow",
+             "instname":"Apogee USB/Net",
+             "code"    :"cdk500",
+             "objname" :"OBJECT",
+             "filter"  :"FILTER",
+             "observer":"OBSERVER",
+             "date"    :"DATE-OBS",
+             "time"    :None,
+             "texp"    :"EXPTIME",
+             "dformat" :1,
+             "tformat" :1,
+             "dark"    :np.nan,
+             "read"    :12.817136,
+             "gain"    :1.30117
          }
     ]
 
