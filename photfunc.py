@@ -255,14 +255,14 @@ def get_loc(hdr,telcode):
                 lat=47.9180556*u.deg,
                 height=944*u.m
             )
-    elif telcode == 'krak':
+    elif telcode == 'krak' or telescope == 'cdk500':
         loc = EarthLocation.from_geodetic(
                 lon=20.0675000*u.deg,
                 lat=49.5691667*u.deg,
                 height=305*u.m #from 50cm fits file
             )
 
-    elif telcode == 'krak14':
+    elif telcode == 'tymce':
         loc = EarthLocation.from_geodetic(
                 lon=23.20722*u.deg,
                 lat=50.19306*u.deg,
