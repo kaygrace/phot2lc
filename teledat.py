@@ -405,6 +405,22 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :12.817136,
              "gain"    :1.30117
+         },
+        {
+             "telename":"3.5m DFOT at ARIES",
+             "instname":"TIRCAM2",
+             "code"    :"dot",
+             "objname" :"OBJECT",
+             "filter"  :"FILTER1",
+             "observer":"OBSERVER",
+             "date"    :"DATE-OBS",
+             "time"    :None,
+             "texp"    :"EXPTIME",
+             "dformat" :1,
+             "tformat" :1,
+             "dark"    :np.nan,
+             "read"    :np.nan,
+             "gain"    :1.0
          }
     ]
 
