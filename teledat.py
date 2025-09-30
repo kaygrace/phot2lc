@@ -421,6 +421,54 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :1.0
+         },
+        {
+             "telename":"Xinglong 0.6m telescope",
+             "instname":"CCD",
+             "code"    :"xing60",
+             "objname" :"OBJ_NAME",
+             "filter"  :"FILTER",
+             "observer":"OBSERVER",
+             "date"    :"DATE-OBS",
+             "time"    :"TIME-OBS",
+             "texp"    :"EXPTIME",
+             "dformat" :0,
+             "tformat" :0,
+             "dark"    :np.nan,
+             "read"    :np.nan,
+             "gain"    :1.0
+         },
+        {
+             "telename":"Xinglong 0.8m telescope, TNT",
+             "instname":"CCD",
+             "code"    :"tnt",
+             "objname" :"OBJ_NAME",
+             "filter"  :"FILTER",
+             "observer":"OBSERVER",
+             "date"    :"DATE-OBS",
+             "time"    :"TIME-OBS",
+             "texp"    :"EXPTIME",
+             "dformat" :0,
+             "tformat" :0,
+             "dark"    :np.nan,
+             "read"    :np.nan,
+             "gain"    :1.0
+         },
+        {
+             "telename":"Nanshan 0.43m telescope, PAT",
+             "instname":"QHYCCD-Cameras2-Capture",
+             "code"    :"pat",
+             "objname" :"OBJECT",
+             "filter"  :"FILTER",
+             "observer":"OBSERVER",
+             "date"    :"DATE-OBS",
+             "time"    :None,
+             "texp"    :"EXPTIME",
+             "dformat" :1,
+             "tformat" :1,
+             "dark"    :np.nan,
+             "read"    :np.nan,
+             "gain"    :1.0
          }
     ]
 
