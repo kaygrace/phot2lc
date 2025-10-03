@@ -469,6 +469,22 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :1.0
+         },
+        {
+             "telename":"Zeiss-1000 (1m) at Tian Shan Astronomical Observatory",
+             "instname":"FLI",
+             "code"    :"tshao",
+             "objname" :"OBJECT",
+             "filter"  :"FILTER",
+             "observer":"OBSERVER",
+             "date"    :"DATE-OBS",
+             "time"    :None,
+             "texp"    :"EXPTIME",
+             "dformat" :1,
+             "tformat" :1,
+             "dark"    :np.nan,
+             "read"    :np.nan,
+             "gain"    :1.0
          }
     ]
 
