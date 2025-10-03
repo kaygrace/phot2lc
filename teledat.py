@@ -455,6 +455,22 @@ def get_telinfo():
              "gain"    :1.0
          },
         {
+             "telename":"Xinglong 0.85m telescope, BNT",
+             "instname":"Andor Tech",
+             "code"    :"bnt",
+             "objname" :"OBJECT",
+             "filter"  :"FILTER",
+             "observer":"OBSERVER",
+             "date"    :"DATE-OBS",
+             "time"    :None,
+             "texp"    :"EXPTIME",
+             "dformat" :1,
+             "tformat" :1,
+             "dark"    :np.nan,
+             "read"    :np.nan,
+             "gain"    :1.0
+         },
+        {
              "telename":"Nanshan 0.43m telescope, PAT",
              "instname":"QHYCCD-Cameras2-Capture",
              "code"    :"pat",
