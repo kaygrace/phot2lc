@@ -293,7 +293,7 @@ def get_loc(hdr,telcode):
                 lat=37.743889*u.deg,
                 height=675*u.m 
             )
-    elif telcode == 'atoz' or telcode == 'atoa':
+    elif telcode == 'ato':
         loc = EarthLocation.from_geodetic(
                 lon=77.8716667*u.deg,
                 lat=43.2252778*u.deg,
@@ -311,6 +311,13 @@ def get_loc(hdr,telcode):
                 lon=87.1833333*u.deg,
                 lat=43.4666667*u.deg,
                 height=2080*u.m 
+            )
+
+    elif telcode == 'tshao':
+        loc = EarthLocation.from_geodetic(
+                lon=76.9713889*u.deg,
+                lat=43.0575000*u.deg,
+                height=2735*u.m 
             )
     return loc
 
