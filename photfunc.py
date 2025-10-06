@@ -196,8 +196,6 @@ def get_loc(hdr,telcode):
         loc = EarthLocation.of_site('CAHA')
     elif telcode == 'ap35' or telcode == 'ap05':
         loc = EarthLocation.of_site('Apache Point Observatory')
-    elif telcode == 'oanspm':
-        loc = EarthLocation.of_site('Observatorio Astronomico Nacional, San Pedro Metir')
     elif telcode == 'gems':
         loc = EarthLocation.of_site('Gemini South')
 
@@ -257,11 +255,18 @@ def get_loc(hdr,telcode):
                 lat=47.9180556*u.deg,
                 height=944*u.m
             )
-    elif telcode == 'krak':
+    elif telcode == 'krak50' or telescope == 'cdk500':
         loc = EarthLocation.from_geodetic(
                 lon=20.0675000*u.deg,
                 lat=49.5691667*u.deg,
-                height=383*u.m #used the highest elevation from Krakow wiki
+                height=305*u.m #from 50cm fits file
+            )
+
+    elif telcode == 'tymce':
+        loc = EarthLocation.from_geodetic(
+                lon=23.20722*u.deg,
+                lat=50.19306*u.deg,
+                height=221*u.m #from fits file
             )
 
     elif telcode == 'suho':
@@ -288,19 +293,14 @@ def get_loc(hdr,telcode):
                 lat=37.743889*u.deg,
                 height=675*u.m 
             )
-    elif telcode == 'atoz':
+    elif telcode == 'ato':
         loc = EarthLocation.from_geodetic(
                 lon=77.8716667*u.deg,
                 lat=43.2252778*u.deg,
                 height=2750*u.m 
             )
-    elif telcode == 'atoa':
-        loc = EarthLocation.from_geodetic(
-                lon=77.8716667*u.deg,
-                lat=43.2252778*u.deg,
-                height=2750*u.m 
-            )
-    elif telcode == 'dfot':
+    
+    elif telcode == 'dfot' or telcode == 'dot':
         loc = EarthLocation.from_geodetic(
                 lon=79.6850000*u.deg,
                 lat=29.3616667*u.deg,
@@ -311,6 +311,13 @@ def get_loc(hdr,telcode):
                 lon=87.1833333*u.deg,
                 lat=43.4666667*u.deg,
                 height=2080*u.m 
+            )
+
+    elif telcode == 'tshao':
+        loc = EarthLocation.from_geodetic(
+                lon=76.9713889*u.deg,
+                lat=43.0575000*u.deg,
+                height=2735*u.m 
             )
     return loc
 
