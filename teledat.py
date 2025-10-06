@@ -278,7 +278,7 @@ def get_telinfo():
              "read"    :6.58,
              "gain"    :3.16
           },
-        {
+          {
              "telename":"Lulin 1m, LOT",
              "instname":"Andor CCD/EMCCD (SDK2)",
              "code"    :"luli",
@@ -293,8 +293,8 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :8.5,
              "gain"    :2.00
-         },
-        {
+          },
+          {
              "telename":"1m RCC Telescope at Piszkéstető Observatory, Hungary",
              "instname":"sicamera",
              "code"    :"pisz",
@@ -309,8 +309,8 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :1.00
-         },
-        {
+          },
+          {
              "telename":"ADU60 at Adiyaman Observatory, Turkey",
              "instname":"Andor CCD/EMCCD (SDK2)",
              "code"    :"adu60",
@@ -325,8 +325,8 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :1.00
-         },
-        {
+          },
+          {
              "telename":"Krakow 50 cm",
              "instname":"QHY-600M",
              "code"    :"krak50",
@@ -341,8 +341,8 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :12.9,
              "gain"    :16.00
-         },
-        {
+          },
+          {
              "telename":"Remote 14inch run by Krakow Observatory, by Ukraine border",
              "instname":"ASI Camera",
              "code"    :"tymce",
@@ -357,8 +357,8 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :0.4386
-         },
-        {
+          },
+          {
              "telename":"HAO68 at Horten Observatory, Norway",
              "instname":"Moravian Instruments, G2-1600 MkII",
              "code"    :"hao",
@@ -373,8 +373,8 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :1.5
-         },
-        {
+          },
+          {
              "telename":"ARCSAT 0.5m at Apache Point",
              "instname":"dcam-spare",
              "code"    :"ap05",
@@ -389,8 +389,8 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :1.0
-         },
-        {
+          },
+          {
              "telename":"CDK500 at Krakow",
              "instname":"Apogee USB/Net",
              "code"    :"cdk500",
@@ -405,8 +405,8 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :12.817136,
              "gain"    :1.30117
-         },
-        {
+          },
+          {
              "telename":"3.5m DOT at ARIES",
              "instname":"TIRCAM2",
              "code"    :"dot",
@@ -421,8 +421,8 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :1.0
-         },
-        {
+          },
+          {
              "telename":"Xinglong 0.6m telescope",
              "instname":"CCD",
              "code"    :"xing60",
@@ -437,8 +437,8 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :1.0
-         },
-        {
+          },
+          {
              "telename":"Xinglong 0.8m telescope, TNT",
              "instname":"CCD",
              "code"    :"tnt",
@@ -453,8 +453,8 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :1.0
-         },
-        {
+          },
+          {
              "telename":"Xinglong 0.85m telescope, BNT",
              "instname":"Andor Tech",
              "code"    :"bnt",
@@ -469,8 +469,8 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :1.0
-         },
-        {
+          },
+          {
              "telename":"Nanshan 0.43m telescope, PAT",
              "instname":"QHYCCD-Cameras2-Capture",
              "code"    :"pat",
@@ -485,8 +485,8 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :1.0
-         },
-        {
+          },
+          {
              "telename":"Zeiss-1000 (1m) at Tian Shan Astronomical Observatory",
              "instname":"FLI",
              "code"    :"tshao",
@@ -501,8 +501,8 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :1.0
-         },
-        {
+          },
+          {
              "telename":"Warwaick remote 1-meter at RM",
              "instname":"",
              "code"    :"warw",
@@ -517,7 +517,7 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :1.0
-         }
+          }
     ]
 
     return tele_info
