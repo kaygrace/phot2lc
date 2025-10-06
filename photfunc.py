@@ -198,7 +198,6 @@ def get_loc(hdr,telcode):
         loc = EarthLocation.of_site('Apache Point Observatory')
     elif telcode == 'gems':
         loc = EarthLocation.of_site('Gemini South')
-
     elif telcode == 'xing60' or telcode == 'tnt' or telcode == 'bnt':
         loc = EarthLocation.of_site('Beijing XingLong Observatory')
     elif telcode == 'luli':
@@ -261,14 +260,12 @@ def get_loc(hdr,telcode):
                 lat=49.5691667*u.deg,
                 height=305*u.m #from 50cm fits file
             )
-
     elif telcode == 'tymce':
         loc = EarthLocation.from_geodetic(
                 lon=23.20722*u.deg,
                 lat=50.19306*u.deg,
                 height=221*u.m #from fits file
             )
-
     elif telcode == 'suho':
         loc = EarthLocation.from_geodetic(
                 lon=20.0675000*u.deg,
@@ -299,7 +296,6 @@ def get_loc(hdr,telcode):
                 lat=43.2252778*u.deg,
                 height=2750*u.m 
             )
-    
     elif telcode == 'dfot' or telcode == 'dot':
         loc = EarthLocation.from_geodetic(
                 lon=79.6850000*u.deg,
@@ -312,7 +308,6 @@ def get_loc(hdr,telcode):
                 lat=43.4666667*u.deg,
                 height=2080*u.m 
             )
-
     elif telcode == 'tshao':
         loc = EarthLocation.from_geodetic(
                 lon=76.9713889*u.deg,
