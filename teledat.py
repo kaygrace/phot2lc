@@ -549,6 +549,22 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :1.0
+         },
+        {
+             "telename":"Tuebingen Observatory 0.8m",
+             "instname":"SBIG STL-1001 3 CCD Camera",
+             "code"    :"tueb",
+             "objname" :"OBJECT",
+             "filter"  :"FILTER",
+             "observer":"OBSERVER",
+             "date"    :"DATE-OBS",
+             "time"    :None,
+             "texp"    :"EXPTIME",
+             "dformat" :1,
+             "tformat" :1,
+             "dark"    :np.nan,
+             "read"    :np.nan,
+             "gain"    :2.09
          }
     ]
 
