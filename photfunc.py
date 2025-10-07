@@ -174,7 +174,7 @@ def get_loc(hdr,telcode):
                 lat=34.8932839,
                 height=880*u.m
             )
-    elif telcode == 'uh22':
+    elif telcode == 'uh88':
         loc = EarthLocation.from_geodetic(
                 lon=-155.47083333*u.deg,
                 lat=19.82361111*u.deg,
