@@ -517,6 +517,38 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :1.0
+         },
+        {
+             "telename":"LAST Array Israel",
+             "instname":"QHY600M",
+             "code"    :"last",
+             "objname" :"OBJECT",
+             "filter"  :"FILTER",
+             "observer":"",
+             "date"    :"DATE-OBS",
+             "time"    :None,
+             "texp"    :"EXPTIME",
+             "dformat" :1,
+             "tformat" :1,
+             "dark"    :np.nan,
+             "read"    :np.nan,
+             "gain"    :1.0
+         },
+        {
+             "telename":"Baker Observatory 20 inch, CDK20",
+             "instname":"Apogee USB/Net",
+             "code"    :"bake",
+             "objname" :"OBJECT",
+             "filter"  :"FILTER",
+             "observer":"OBSERVER",
+             "date"    :"DATE-OBS",
+             "time"    :None,
+             "texp"    :"EXPTIME",
+             "dformat" :1,
+             "tformat" :1,
+             "dark"    :np.nan,
+             "read"    :np.nan,
+             "gain"    :1.0
          }
     ]
 
