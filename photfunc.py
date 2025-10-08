@@ -278,12 +278,6 @@ def get_loc(hdr,telcode):
                 lat=55.3159722*u.deg,
                 height=200*u.m 
             )
-    elif telcode == 'last':
-        loc = EarthLocation.from_geodetic(
-                lon=35.0252778*u.deg,
-                lat=30.0483333*u.deg,
-                height=400*u.m 
-            )
     elif telcode == 'adu60':
         loc = EarthLocation.from_geodetic(
                 lon=38.231667*u.deg,
