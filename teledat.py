@@ -504,7 +504,7 @@ def get_telinfo():
           },
           {
              "telename":"Warwaick remote 1-meter at RM",
-             "instname":"",
+             "instname":"CCD",
              "code"    :"warw",
              "objname" :"OBJECT",
              "filter"  :"FILTER",
@@ -549,6 +549,22 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :2.09
+         },
+        {
+             "telename":"STACam on the UH88",
+             "instname":"STACam",
+             "code"    :"uh88",
+             "objname" :"OBJECT",
+             "filter"  :"FILTER",
+             "observer":None,
+             "date"    :"DATE",
+             "time"    :"UT",
+             "texp"    :"EXPTIME",
+             "dformat" :0,
+             "tformat" :0,
+             "dark"    :np.nan,
+             "read"    :np.nan,
+             "gain"    :1.00
          }
     ]
 
