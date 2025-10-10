@@ -565,6 +565,38 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :1.00
+         },
+        {
+             "telename":"Lookout Observatory 14inch, UNCA",
+             "instname":"ASCOM Camera",
+             "code"    :"unca",
+             "objname" :"OBJECT",
+             "filter"  :"FILTER",
+             "observer":None,
+             "date"    :"DATE-OBS",
+             "time"    :None,
+             "texp"    :"EXPTIME",
+             "dformat" :1,
+             "tformat" :1,
+             "dark"    :np.nan,
+             "read"    :np.nan,
+             "gain"    :1.00
+         },
+        {
+             "telename":"OAN-SPM 1.5m",
+             "instname":"CAMILA",
+             "code"    :"oanspm",
+             "objname" :"OBJECT",
+             "filter"  :"FILTER",
+             "observer":None,
+             "date"    :"DATE-OBS",
+             "time"    :"UT",
+             "texp"    :"EXPTIME",
+             "dformat" :0,
+             "tformat" :0,
+             "dark"    :np.nan,
+             "read"    :np.nan,
+             "gain"    :1.00
          }
     ]
 
