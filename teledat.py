@@ -518,7 +518,7 @@ def get_telinfo():
              "read"    :np.nan,
              "gain"    :1.0
          },
-        {
+         {
              "telename":"Baker Observatory 20 inch, CDK20",
              "instname":"Apogee USB/Net",
              "code"    :"bake",
@@ -534,7 +534,7 @@ def get_telinfo():
              "read"    :np.nan,
              "gain"    :1.0
          },
-        {
+         {
              "telename":"Tuebingen Observatory 0.8m",
              "instname":"SBIG STL-1001 3 CCD Camera",
              "code"    :"tueb",
@@ -550,7 +550,7 @@ def get_telinfo():
              "read"    :np.nan,
              "gain"    :2.09
          },
-        {
+         {
              "telename":"STACam on the UH88",
              "instname":"STACam",
              "code"    :"uh88",
@@ -566,7 +566,7 @@ def get_telinfo():
              "read"    :np.nan,
              "gain"    :1.00
          },
-        {
+         {
              "telename":"Lookout Observatory 14inch, UNCA",
              "instname":"ASCOM Camera",
              "code"    :"unca",
@@ -582,7 +582,7 @@ def get_telinfo():
              "read"    :np.nan,
              "gain"    :1.00
          },
-        {
+         {
              "telename":"OAN-SPM 1.5m",
              "instname":"CAMILA",
              "code"    :"oanspm",
@@ -598,7 +598,7 @@ def get_telinfo():
              "read"    :np.nan,
              "gain"    :1.00
          },
-        {
+         {
             "telename":"SPARC4 on OPD 1.6m",
             "instname":"SPARC4",
             "code"    :"opd16",
@@ -613,7 +613,7 @@ def get_telinfo():
             "dark"    :np.nan,
             "read"    :4.82,
             "gain"    :0.8
-        }
+         }
     ]
 
     return tele_info
