@@ -504,7 +504,7 @@ def get_telinfo():
           },
           {
              "telename":"Warwaick remote 1-meter at RM",
-             "instname":"",
+             "instname":"CCD",
              "code"    :"warw",
              "objname" :"OBJECT",
              "filter"  :"FILTER",
@@ -549,7 +549,71 @@ def get_telinfo():
              "dark"    :np.nan,
              "read"    :np.nan,
              "gain"    :2.09
-         }
+         },
+        {
+             "telename":"STACam on the UH88",
+             "instname":"STACam",
+             "code"    :"uh88",
+             "objname" :"OBJECT",
+             "filter"  :"FILTER",
+             "observer":None,
+             "date"    :"DATE",
+             "time"    :"UT",
+             "texp"    :"EXPTIME",
+             "dformat" :0,
+             "tformat" :0,
+             "dark"    :np.nan,
+             "read"    :np.nan,
+             "gain"    :1.00
+         },
+        {
+             "telename":"Lookout Observatory 14inch, UNCA",
+             "instname":"ASCOM Camera",
+             "code"    :"unca",
+             "objname" :"OBJECT",
+             "filter"  :"FILTER",
+             "observer":None,
+             "date"    :"DATE-OBS",
+             "time"    :None,
+             "texp"    :"EXPTIME",
+             "dformat" :1,
+             "tformat" :1,
+             "dark"    :np.nan,
+             "read"    :np.nan,
+             "gain"    :1.00
+         },
+        {
+             "telename":"OAN-SPM 1.5m",
+             "instname":"CAMILA",
+             "code"    :"oanspm",
+             "objname" :"OBJECT",
+             "filter"  :"FILTER",
+             "observer":None,
+             "date"    :"DATE-OBS",
+             "time"    :"UT",
+             "texp"    :"EXPTIME",
+             "dformat" :0,
+             "tformat" :0,
+             "dark"    :np.nan,
+             "read"    :np.nan,
+             "gain"    :1.00
+         },
+        {
+            "telename":"SPARC4 on OPD 1.6m",
+            "instname":"SPARC4",
+            "code"    :"opd16",
+            "objname" :"OBJECT",
+            "filter"  :"FILTER",
+            "observer":"OBSERVER",
+            "date"    :"DATE-OBS",
+            "time"    :None,
+            "texp"    :"EXPTIME",
+            "dformat" :1,
+            "tformat" :1,
+            "dark"    :np.nan,
+            "read"    :4.82,
+            "gain"    :0.8
+        }
     ]
 
     return tele_info
