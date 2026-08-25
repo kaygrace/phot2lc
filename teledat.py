@@ -584,7 +584,7 @@ def get_telinfo():
          },
          {
              "telename":"OAN-SPM 1.5m",
-             "instname":"CAMILA",
+             "instname":"E2V-4240",
              "code"    :"oanspm",
              "objname" :"OBJECT",
              "filter"  :"FILTER",
@@ -613,6 +613,22 @@ def get_telinfo():
             "dark"    :np.nan,
             "read"    :4.82,
             "gain"    :0.8
+         },
+        {
+            "telename":"OPD 0.6m",
+            "instname":"Caml+Ixon",
+            "code"    :"opd06",
+            "objname" :"OBJECT",
+            "filter"  :"FILTER",
+            "observer":"OBSERVER",
+            "date"    :"DATE-OBS",
+            "time"    :None,
+            "texp"    :"EXPOSURE",
+            "dformat" :1,
+            "tformat" :1,
+            "dark"    :np.nan,
+            "read"    :6.3,
+            "gain"    :1.5
          }
     ]
 
